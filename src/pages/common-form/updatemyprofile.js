@@ -75,11 +75,6 @@ const UserProfile = () => {
                                 className="my-2"
                                 {...register("name", { required: true })}
                               />
-                              {errors.name && (
-                                <small style={{ color: "red" }}>
-                                  {errors.name.message}
-                                </small>
-                              )}
                             </Grid>
                           </Grid>
                         </p>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { callApi } from "../../../../utils/apicall";
 import Router from "next/router";
 import { Button } from "@mui/material";
-
+import Loader from "@/Loader";
 const AllUser = () => {
   const [userProfile, setUserProfile] = useState([]);
 
@@ -52,6 +52,8 @@ const AllUser = () => {
 
   return (
     <>
+      <Loader />
+
       <div className="container mt-3">
         <div className="pagetitle">
           <ol className="breadcrumb">
