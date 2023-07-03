@@ -46,9 +46,9 @@ const AllStudnetList = () => {
           </thead>
 
           {userProfile &&
-            userProfile.map((item) => {
+            userProfile.map((item , index) => {
               return (
-                <tbody id={item._id}>
+                <tbody key={index} id={item._id}>
                   <tr>
                     <td>
                       <div className="d-flex align-items-center">
