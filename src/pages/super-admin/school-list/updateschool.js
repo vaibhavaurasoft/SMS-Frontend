@@ -48,7 +48,28 @@ const InnerDdetails = () => {
                     {...register("schoolname", {})}
                     required
                   />
-                 
+                  <TextField
+                    label="schoolname"
+                    variant="standard"
+                    fullWidth
+                    type="text"
+                    name="schoolname"
+                    autoComplete="off"
+                    className="my-2"
+                    {...register("City", {})}
+                    required
+                  />
+                  <TextField
+                    label="schoolname"
+                    variant="standard"
+                    fullWidth
+                    type="text"
+                    name="schoolname"
+                    autoComplete="off"
+                    className="my-2"
+                    {...register("address", {})}
+                    required
+                  />
                 </Grid>
               </Grid>
               <div className="text-center my-2 mt-4">
